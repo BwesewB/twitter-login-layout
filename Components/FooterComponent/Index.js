@@ -2,7 +2,7 @@ import styles from './Footer.module.css'
 export default function Footer(){
 
     return(
-        <footer>
+        <footer className={styles.footer}>
             <a class="fakeLink" href="">About</a>
             <a class="fakeLink" href="">Download the X app</a>
             <a class="fakeLink" href="">Help Center</a>

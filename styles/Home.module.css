@@ -9,3 +9,59 @@
   min-height: 100vh;
 }
 
+
+
+.fakeLink:hover{
+  text-decoration: underline;
+}
+
+.fullDisplay{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rightSide{
+  display:flex;
+  flex-direction: column;
+}
+
+.leftSide{
+  max-width:341.57px;
+  max-height:308.75px;
+  min-width:40.45px;
+  min-height:36.56px;
+}
+
+
+@media screen and (max-width: 820px) {
+  .fullDisplay{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: space-between;
+    padding-left: 10vh;
+  }
+  .leftSide{
+    width:40.45px;
+    height:36.56px;
+  }
+  .main{
+    padding-top: 2.4rem;
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .fullDisplay{
+    padding:20px;
+  }
+  .main{
+    padding:16px;
+  }
+}
+
+@media screen and (width: 414px){
+
+}
