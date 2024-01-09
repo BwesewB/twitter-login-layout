@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import First from '@/components/FirstComponent/Index'
-import Second from '@/components/SecondComponent/Index'
-import Third from '@/components/ThirdComponent/Index'
-import Footer from '@/components/FooterComponent/Index'
+import First from '@/components/FirstComponent/index'
+import Second from '@/components/SecondComponent/index'
+import Third from '@/components/ThirdComponent/index'
+import Footer from '@/components/FooterComponent/index'
 
 export default function Home() {
   return (
