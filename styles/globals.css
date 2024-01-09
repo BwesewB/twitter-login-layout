@@ -128,115 +128,26 @@ footer p, footer a{
 }
 
 #leftSide{
-
+  max-width:341.57px;
+  max-height:308.75px;
 }
 
-h1{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 64px;
-  margin:48px 0px;
-}
-h2{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 31px;
-  margin:0px 0px 32px;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  
 }
 
-#googleButton, #appleButton{
-  width: 300px;
-  height: 40px;
-  background-color: white;
-  color: black;
-  border-radius: 30px;
-  border:none;
-  margin-bottom:10px;
-  transition:0.5s;
-}
-#googleButton:hover, #appleButton:hover{
-  background-color: lightgrey;
-}
-#appleButton{
-  font-weight:bold;
-}
-#createAccount{
-  width: 300px;
-  height: 40px;
-  border-radius: 30px;
-  border:none;
-  background-color: #1D9BF0;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  transition:0.3s;
-}
-#createAccount:hover{
-  background-color: #1a8cd9;
-}
-hr{
-  width:141px;
-  border:1px solid grey;
-  opacity: 0.5;
-}
-#or p{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  color: white;
-  margin-left:5px;
-  margin-right: 5px;
-}
-#or{
-  display:flex;
-  align-items: center;
-  width:300px;
-}
-.secondSection{
-  width:300px;
-}
-.secondSection p{
-  font-size:11px;
-  font-family: Arial, Helvetica, sans-serif;
-  color:grey;
-}
-.secondSection p a{
-  font-size:11px;
-  font-family: Arial, Helvetica, sans-serif;
-  color:#1D9BF0;
-  text-decoration: none;
-  transition:0.3s;
-}
-.secondSection p a:hover{
-text-decoration: underline;
+@media screen and (max-width: 414px){
+  .fullDisplay{
+    display:flex;
+    flex-direction: column;
+  }
 }
 
-.secondSection p span{
-  color:#1D9BF0;
-}
-.thirdSection{
-  margin-top:60px
-}
-h3{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-}
-#signIn{
-  width: 300px;
-  height: 40px;
-  border-radius: 30px;
-  border:1px solid darkgrey;
-  background-color: transparent;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight:bold;
-  font-size: 15px;
-  color: #1D9BF0;
-  margin-top:20px;
-  transition:0.3s;
-}
-#signIn:hover{
-  background-color: #020f17;
-}
+
 
 @media (prefers-color-scheme: dark) {
   html {

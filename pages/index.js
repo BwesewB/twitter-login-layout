@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import First from '@/components/FirstComponent'
+import Second from '@/components/SecondComponent'
+import Third from '@/components/ThirdComponent'
+import Footer from '@/components/FooterComponent'
 
 export default function Home() {
   return (
@@ -13,54 +17,18 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <br></br>
-        <div id="fullDisplay">
-        <div id="leftSide">
-        <Image src={'/images/X_logo.png'} alt="X logo" width={341.57} height={308.75}/>
-        </div>
-        <div id="rightSide">
-          <div class="firstSection">
-            <h1>Happening now</h1>
-            <h2>Join Today.</h2>
+        <div className={styles.fullDisplay}>
+          <div className={styles.leftSide}>
+            <Image src={'/images/X_logo.png'} alt="X logo" width={341.57} height={308.75} layout="responsive"/>
           </div>
-          <div class="secondSection">
-            <input type="button" value="Sign up with Google" id="googleButton" onclick="window.location.href='#'"></input>
-            <br></br>
-              <button id="appleButton">Sign up with Apple</button>
-            <br></br>
-            <div id="or"><hr></hr><p>or</p><hr></hr></div>
-            <button id="createAccount">Create account</button>
-            <p>By signing up, you agree to the <a  target="blank" href="_blank">Terms of Service</a> and <a target="blank" href="_blank">Privacy Policy</a>, including <a target="blank" href="_blank">Cookie Use.</a></p>
-          </div>
-          <div class="thirdSection">
-            <h3>Already have an account?</h3>
-            <button id="signIn">Sign in</button>
+          <div className={styles.rightSide}>
+            <First/>
+            <Second/>
+            <Third/>
           </div>
         </div>
-        </div>
-        <footer>
-          <a class="fakeLink" href="">About</a>
-          <a class="fakeLink" href="">Download the X app</a>
-          <a class="fakeLink" href="">Help Center</a>
-          <a class="fakeLink" href="">Terms of Service</a>
-          <a class="fakeLink" href="">Privacy Policy</a>
-          <a class="fakeLink" href="">Cookie Policy</a>
-          <a class="fakeLink" href="">Accessibility</a>
-          <a class="fakeLink" href="">Ads info</a>
-          <a class="fakeLink" href="">Blog</a>
-          <a class="fakeLink" href="">Status</a>
-          <a class="fakeLink" href="">Careers</a>
-          <a class="fakeLink" href="">Brand Resources</a>
-          <a class="fakeLink" href="">Advertising</a>
-          <a class="fakeLink" href="">Marketing</a>
-          <a class="fakeLink" href="">X for Business</a>
-          <a class="fakeLink" href="">Developers</a>
-          <a class="fakeLink" href="">Directory</a>
-          <a class="fakeLink" href="">Settings</a>
-          <p>© 2024 X Corp.</p>
-    </footer>
-        
+        <Footer/>
       </main>
-
     </>
   )
 }
