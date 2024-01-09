@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import First from '/Components/FirstComponent'
-import Second from '/Components/SecondComponent'
-import Third from '/Components/ThirdComponent'
-import Footer from '/Components/FooterComponent'
+import First from '@/components/FirstComponent/Index'
+import Second from '@/components/SecondComponent/Index'
+import Third from '@/components/ThirdComponent/Index'
+import Footer from '@/components/FooterComponent/Index'
 
 export default function Home() {
   return (
@@ -16,7 +16,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={`${styles.main}`}>
-
         <div className={styles.fullDisplay}>
           <div className={styles.leftSide}>
             <Image src={'/images/X_logo.png'} alt="X logo" width={341.57} height={308.75} layout="responsive"/>
@@ -29,7 +28,6 @@ export default function Home() {
         </div>
         <Footer/>
       </main>
-
     </>
   )
 }
